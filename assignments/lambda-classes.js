@@ -38,7 +38,7 @@ class Instructor extends Person {
       amount = Math.floor(Math.random() * 100) + 1;
 
     }
-    
+
     if (amount % 2 === 0) {
       student.grade -= amount;
     }
@@ -111,7 +111,6 @@ class ProjectManager extends Instructor {
   }
 }
 
-
 // Initializing some objects
 const instructorAttributes = {
   name: 'Brit',
@@ -148,6 +147,9 @@ const pmAttributes = {
 const instructor1 = new Instructor(instructorAttributes);
 const pm1 = new ProjectManager(pmAttributes);
 const student1 = new Student(studentAttributes, instructor1, pm1);
+
+
+//Tests for the simpler methods.
 
 // instructor1.demo('array methods');
 // instructor1.grade(student1, 'JavaScript III');
